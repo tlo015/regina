@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    position: relative;
+}
+
+body{
+    /* left side image */
+    /* background-image: url("placeholder1.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-attachment: fixed; */
+}
+
+.imgContainer{
+   height:100%;
+   width:100%; 
+   overflow: hidden;
+   position: absolute; 
+   top: 0px;
+   left: 0px;
+   z-index: -10;
+}
+
+.background{
+    height: 100%;
+    opacity: 0.8;
+}
+
+.container-fluid, .row, .left{
+    height: 100%;
+}
+
+.navbar{
+    padding: 8px 0px;
+    margin: 15px 10px;
+}
+
+.left{
+    position: relative;
+    position: fixed;
+}
+
+/* LEFT ELEMENTS */
+/* left image */
+/* https://css-tricks.com/how-to-resizeable-background-image/ */
+.hello{
+    font-family: 'Special Elite', cursive;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    margin: auto;
+    left: 0;
+    right: 0px;
+}
+
+.helloContent {
+    font-size: 25px;
+}
+
+.helloTitle {
+    margin-top: 8px;
+}
+
+/* RIGHT ELEMENTS */
+.right{
+    margin-left: 41.5%;
+}
+
+.sectionTitle {
+    overflow: hidden;
+    text-align: center;
+}
+
+.sectionTitle:before,
+.sectionTitle:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.sectionTitle:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.sectionTitle:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.skillTitle {
+    text-align: center;
+}
+
+.skillBanner {
+    width: 100%;
+    height: auto;
+}
+
+.yesNo {
+    width: 100%;
+    height: auto;
+}
+
+/* PORTFOLIO */
+.port {
+    position: relative;
+    width: 100%;
+}
+
+.portImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: gray; */
+    padding: 0;
+}
+
+.port:hover .overlay {
+    opacity: 1;
+  }
+
+.port:hover .portImg {
+    opacity: 0.3;
+}
+
+.text {
+    color: black;
+    font-size: 18px;
+    font-weight: strong;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;   
+}
+
+
+/* SKILLS BAR */
+.bar{
+    width: 100%;
+    background-color: lightgray;
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+}
+
+.skill{
+    background-color: grey;
+    display: inline-block;
+}
+
+.tag{
+    color: white;
+    text-align: center;
+    width: 100px;
+    background-color: black;
+    display: inline-block;
+}
+
+.percent{
+    float: right;
+    padding-right: 10px;
+}
+
+.html{
+    width: 80%;
+}
+.css{
+    width: 80%;
+}
+.git{
+    width: 80%;
+}
+.javascript{
+    width: 70%;
+}
+.node{
+    width: 50%;
+}
+.mysql{
+    width: 70%;
+}
+.sequelize{
+    width: 60%;
+}
+.mongodb{
+    width: 50%;
+}
+.react{
+    width: 50%;
+}
+
+
+/*MEDIA QUERIES */
+@media (max-width: 767px) { 
+    .container-fluid, .row, .left{
+        height: auto;
+    }
+
+    .left{
+        height: 350px;
+    }
+
+    .right{
+        margin-left: 50%;
+    }
+
+    .imgContainer{
+        height:350px;
+        width:100%; 
+        overflow: hidden;
+        position: absolute; 
+        top: 0px;
+        left: 0px;
+        z-index: -10;
+    }
+
+    .background {
+        width: 100%;
+        height: auto;
+    }
+
+    .left{
+        position: relative;
+    }
+
+    .right{
+        margin: 0;
+    }
+}
+
+@media (max-width: 685px) {
+    .background {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-height: 309px) {
+    .background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-height: 309px) and (max-width: 1385px) {
+    .background {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* @media (max-height: 228px) and (max-width: 1078px) {
+    .background {
+        width: 100%;
+        height: auto;
+    }
+} */
