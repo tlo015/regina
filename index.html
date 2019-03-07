@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Regina2</title>
+    <title>Regina Resume</title>
 
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -25,7 +25,7 @@
             <div class="left col-sm-12 col-md-5">
 
                 <!-- NAVBAR -->
-                <nav class="navbar navbar-expand-lg navbar-light ">
+                <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand navTab" href="#">Home</a>
                         
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
                 </header>
 
                 <div class="imgContainer">
-                        <img class="background" src="./public/images/me2.jpg">
+                        <img class="background" src="./public/images/main2.jpg">
                     </div>
             </div>
 
@@ -82,56 +82,119 @@
 
                     <div class="row skillRow">
                             <div class="col-sm-4">
-                                <img class="skillBanner" src="./public/images/design.png">
-                                <h5 class="skillTitle">Design</h5>
-                                <p>Attention to Detail
-                                    <br>From mock-up to implementation
-                                    <br>Simple and clean designs
-                                </p>
+                                <div class="skillTitle">
+                                    <i class="fas fa-crop"></i>
+                                    <h5>Design</h5>
+                                </div>
+                                <ul>
+                                    <li>Attention to Detail</li>
+                                    <li>From mock-up to implementation</li>
+                                    <li>Simple and clean designs</li>
+                                </ul>
                             </div>
 
                             <div class="col-sm-4"> 
-                                <img class="skillBanner" src="./public/images/html.png">
-                                <h5 class="skillTitle">Front-end</h5>
-                                <p>Bring ideas to life using HTML, CSS and Javascript
-                                    <br>Thoughtful interactions 
-                                    <br>Cohesive company brand
-                                    <br>Ease of use
-                                </p>
+                                <div class="skillTitle">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Front-end</h5>
+                                </div>
+                                <ul>
+                                    <li>Bring ideas to life using HTML, CSS and Javascript</li>
+                                    <li>Thoughtful interactions</li>
+                                    <li>Cohesive company brand</li>
+                                    <li>Ease of use</li>
+                                </ul>
                             </div>
 
                             <div class="col-sm-4">
-                                <img class="skillBanner" src="./public/images/html.png">
-                                <h5 class="skillTitle">Back-end</h5>
-                                <p>Ability to build databases using MySQL and MongoDB 
-                                    <br>Deliver smooth functionality
-                                    <br>Integration and Management 
-                                </p>
+                                <div class="skillTitle">
+                                    <i class="fas fa-server"></i>
+                                    <h5>Back-end</h5>
+                                </div>
+                                <ul>
+                                    <li>Ability to build databases using MySQL and MongoDB</li>
+                                    <li>Deliver smooth functionality</li>
+                                    <li>Integration and Management</li>
+                                </ul>
                             </div>
                         </div>
-                        
-                        <div class="row">
-                            <div class="col-sm-6 port">
-                                <img class="portImg" src="./public/images/streetart.png">
-                                <div class="overlay">
-                                    <a class="text" href=" https://tlo015.github.io/street-art-finder/">Street Art API Finder: <br> HTML, CSS, JAVASCRIPT, API</a>
-                                </div>
-                            </div>
 
-                            <div class="col-sm-6 port">
-                                <img class="portImg" src="./public/images/blkpocket.png">
-                                <div class="overlay">
-                                    <a class="text" href="https://whispering-savannah-18362.herokuapp.com/">E-Commerce: <br> HMTL, CSS, JAVASCRIPT, API <br> MYSQL, SEQUELIZE, EXPRESSJS </a>
+                        <div id="textCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#textCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#textCarousel" data-slide-to="1"></li>
+                                <li data-target="#textCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-content">
+                                        <img class="portImg" src="./public/images/streetart.png">                                  
+                                        <div class="wrapper carousel-caption text">
+                                            <h6>Street Art API Finder:</h6>
+                                            <p> HTML, CSS, JAVASCRIPT, API</p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <a href=" https://tlo015.github.io/street-art-finder/">DEMO</a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="https://github.com/tlo015/street-art-finder">CODE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6 port">
-                                <img class="portImg" src="./public/images/eduGames.png">
-                                <div class="overlay">
-                                    <a class="text" href="https://mysterious-thicket-42805.herokuapp.com/">Educational Game:  <br>MongoDB, ExpressJS, React, NodeJS</a>
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                        <img class="portImg" src="./public/images/blkpocket.png">
+
+                                        <div class="wrapper carousel-caption text">
+                                            <h6>E-Commerce:</h6>
+                                            <p> HMTL, CSS, Javascript, API <br> MYSQL, Sequelize, ExpressJS </p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <a href="https://whispering-savannah-18362.herokuapp.com/">DEMO</a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="https://github.com/tlo015/blkpocket">CODE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                             </div>
-                        </div> 
+                            
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                        <img class="portImg" src="./public/images/eduGames.png">
+
+                                        <div class="wrapper carousel-caption text">
+                                            <h6> Educational Game:</h6>
+                                            <p>MongoDB, ExpressJS, React, NodeJS</p>
+                                            <div class="row">
+                                                <div class="col-sm-2"></div>
+                                                <div class="col-sm-3">
+                                                    <a href="https://mysterious-thicket-42805.herokuapp.com/">DEMO</a>
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                                <div class="col-sm-3">
+                                                    <a href="https://github.com/tlo015/p3by5">CODE</a>
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <a class="carousel-control-prev" href="#textCarousel" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#textCarousel" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- RIGHT - SKILLSET  -->
@@ -202,45 +265,41 @@
 
                 <div class="row skillRow">
                     <div class="col-sm-4">
-                        <img class="skillBanner" src="./public/images/design.png">
-                        <h5 class="skillTitle">Communication</h5>
-                        <p>
-                            Works effectively with clients and teams 
-                            <br>
-                            
-                            <br>
-                            Use of Zenhub to manage workflow and tasks
-                        </p>
+                        <div class="skillTitle">
+                            <i class="fas fa-comments"></i>
+                            <h5>Communication</h5>
+                        </div>
+                        <ul>
+                            <li>Works effectively with clients and teams</li>     <li>Use of Zenhub to manage workflow and tasks</li>
+                        </ul>
                     </div>
 
                     <div class="col-sm-4"> 
-                        <img class="skillBanner" src="./public/images/html.png">
-                        <h5 class="skillTitle">Management</h5>
-                        <p>
-                            Bring ideas to life using HTML, CSS and Javascript
-                            <br>
-                            Ability to rank tasks by priorities
-                            <br>
-                            Cohesive company brand
-                            <br>
-                            Ease of use
-                        </p>
+                        <div class="skillTitle">
+                            <i class="fas fa-users"></i>
+                            <h5>Management</h5>
+                        </div>
+        
+                        <ul>
+                            <li>Bring ideas to life using HTML, CSS and Javascript</li>
+                            <li>Ability to rank tasks by priorities</li>
+                            <li>Cohesive company brand</li>
+                            <li>Ease of use</li>
+                        </ul>
                     </div>
 
                     <div class="col-sm-4">
-                        <img class="skillBanner" src="./public/images/html.png">
-                        <h5 class="skillTitle">Problem Solving</h5>
-                        <p>
-                            Look at issues from different perspectives 
-                            <br>
-                            Thoughtful interactions 
-                            <br>
-                            Cohesive company brand
-                            <br>
-                            Ease of use
-                        </p>
+                        <div class="skillTitle">
+                            <i class="fas fa-question"></i>
+                            <h5>Problem Solving</h5>
+                        </div>
+                        <ul>
+                            <li>Look at issues from different perspectives</li> 
+                            <li>Thoughtful interactions</li>
+                            <li>Cohesive company brand</li>
+                            <li>Ease of use</li>
+                        </ul>
                     </div>
-
                 </div>
 
                 <!-- RESUME -->

@@ -7,13 +7,13 @@ html, body{
     position: relative;
 }
 
-body{
-    /* left side image */
-    /* background-image: url("placeholder1.png");
+/* body{
+    left side image
+    background-image: url("placeholder1.png");
     background-repeat: no-repeat;
     background-size: 50% 100%;
-    background-attachment: fixed; */
-}
+    background-attachment: fixed;
+} */
 
 .imgContainer{
    height:100%;
@@ -27,7 +27,7 @@ body{
 
 .background{
     height: 100%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .container-fluid, .row, .left{
@@ -37,6 +37,10 @@ body{
 .navbar{
     padding: 8px 0px;
     margin: 15px 10px;
+}
+
+.navbar .navTab {
+    color: white;
 }
 
 .left{
@@ -49,6 +53,7 @@ body{
 /* https://css-tricks.com/how-to-resizeable-background-image/ */
 .hello{
     font-family: 'Special Elite', cursive;
+    color: white;
     position: absolute;
     text-align: center;
     top: 40%;
@@ -74,6 +79,11 @@ body{
 /* RIGHT ELEMENTS */
 .right{
     margin-left: 41.5%;
+    padding: 0 45px;
+}
+
+.center{
+    text-align: center;
 }
 
 .sectionTitle {
@@ -102,8 +112,25 @@ body{
     margin-right: -50%;
 }
 
-.skillTitle {
+.skillTitle{
+    /* display: flex;
+    justify-content: space-between;
+    font-size: 30px; */
     text-align: center;
+}
+
+.fas {
+    font-size: 45px;
+    color: white;
+    background: black;
+    width: 100%;
+    padding: 10px;
+}
+
+h5 {
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
 }
 
 .skillBanner {
@@ -111,54 +138,51 @@ body{
     height: auto;
 }
 
-.yesNo {
-    width: 100%;
-    height: auto;
+li {
+    font-size: 12px;
 }
 
 /* PORTFOLIO */
-.port {
-    position: relative;
-    width: 100%;
-}
-
 .portImg {
     display: block;
     width: 100%;
     height: auto;
+    opacity: 0.7;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    /* background-color: gray; */
-    padding: 0;
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.port:hover .overlay {
-    opacity: 1;
-  }
-
-.port:hover .portImg {
-    opacity: 0.3;
-}
-
-.text {
+a{
     color: black;
-    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-caption{
+    color: black;
+}
+
+.carousel-content {
+    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    position: absolute;
+    color: black;
+    font-size: 15px;
     font-weight: strong;
     position: absolute;
-    top: 50%;
+    width: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    bottom: 10px;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
     text-align: center;   
 }
 
